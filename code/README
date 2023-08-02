@@ -1,0 +1,12 @@
+PyTorch version: 1.6
+
+Code execution steps:
+	Step 0: Make sure the main folder has the following files/folders:
+			 - code
+			 - saved_models	(checkpoints)
+			 - cifar-10-batches-py (CIFAR public training and test set)
+			 - private_test_images_2022.npy (private test set)
+	Step 1: Change directory to ./code
+	Step 2: To train use python main.py --mode=train
+			To validate on public test set use python main.py --mode=evaluate
+			To generate prediction probabilities use python main.py --mode=predict
